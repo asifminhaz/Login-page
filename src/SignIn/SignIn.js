@@ -55,7 +55,7 @@ const SignIn = () => {
 }
     return (
         <div>
-            <h1 className='text-center text-4xl'>Please Log in</h1>
+            
             <div class="hero min-h-screen ">
             <form onSubmit={handleSubmit}>
   <div class="hero-content flex-col lg:flex-row-reverse">
@@ -65,6 +65,7 @@ const SignIn = () => {
     </div>
     <div class="card flex-shrink-0 w-full max-w-sm max-w-lg ">
       <div class="card-body">
+      <h1 className='text-center text-4xl'>Please Log in</h1>
         {/* <div class="form-control">
           <label class="label">
             <span class="label-text">Name</span>
@@ -84,12 +85,12 @@ const SignIn = () => {
           <input ref={passwordRef} type="text" placeholder="password" class="input input-bordered" />
           <label class="label">
             {/* <a href="#" class="label-text-alt link link-hover">Forgot password?</a> */}
-            <p>Forget Pssword? <button className='text-primary btn btn-link' onClick={resetPassword}>Reset Password</button></p>
+            <p>Forgot Password?<button className='text-primary btn btn-link' onClick={resetPassword}>Reset Password</button></p>
           </label>
         </div>
         <div class="form-control mt-6">
           <button class="btn  bg-blue-500">Login</button>
-          <p>New to eShopping?<Link to='/signup' className='text-error ' onClick={navigateRegister}>Please Register!!</Link></p>
+          <p className='mt-2'>New to eShopping?  <Link to='/signup' className='text-error ' onClick={navigateRegister}>Please Register!!</Link></p>
           <SocialLogin></SocialLogin>
         </div>
       </div>

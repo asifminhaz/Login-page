@@ -27,7 +27,7 @@ const SignUp = () => {
 }
     return (
         <div>
-            <h1 className='text-center text-4xl'>Please Create an Account</h1>
+          
             <div class="hero min-h-screen bg-blue ">
             <form onSubmit={handleRegister}>
   <div class="hero-content flex-col lg:flex-row-reverse">
@@ -37,6 +37,7 @@ const SignUp = () => {
     </div>
     <div class="card flex-shrink-0 w-full max-w-sm max-w-lg ">
       <div class="card-body">
+      <h1 className='text-center text-4xl'>Please Create an Account</h1>
         <div class="form-control">
           <label class="label">
             <span class="label-text">Name</span>
@@ -54,13 +55,11 @@ const SignUp = () => {
             <span class="label-text">Password</span>
           </label>
           <input ref={passwordRef} type="text" placeholder="password" class="input input-bordered"required />
-          <label class="label">
-            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-          </label>
+          
         </div>
         <div class="form-control mt-6">
           <button class="btn bg-blue-500">Register</button>
-          <p>Already have an Account?<Link to='/login' className='text-error ' onClick={navigateLogin}>Please Register!!</Link></p>
+          <p className='mt-2'>Already have an Account?  <Link to='/login' className='text-error ' onClick={navigateLogin}>Please Register!!</Link></p>
           <SocialLogin></SocialLogin>
         </div>
       </div>
