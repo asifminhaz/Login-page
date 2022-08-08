@@ -89,7 +89,7 @@ const SignIn = () => {
           </label>
         </div>
         <div class="form-control mt-6">
-          <button class="btn  bg-blue-500">Login</button>
+          <button class="btn  bg-blue-500">Sign in</button>
           <p className='mt-2'>New to eShopping?  <Link to='/signup' className='text-error ' onClick={navigateRegister}>Please Register!!</Link></p>
           <SocialLogin></SocialLogin>
         </div>

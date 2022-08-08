@@ -59,7 +59,7 @@ const SignUp = () => {
         </div>
         <div class="form-control mt-6">
           <button class="btn bg-blue-500">Register</button>
-          <p className='mt-2'>Already have an Account?  <Link to='/login' className='text-error ' onClick={navigateLogin}>Please Register!!</Link></p>
+          <p className='mt-2'>Already have an Account?  <Link to='/login' className='text-error ' onClick={navigateLogin}>Please Sign in!!</Link></p>
           <SocialLogin></SocialLogin>
         </div>
       </div>
